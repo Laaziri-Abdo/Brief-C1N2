@@ -1,0 +1,177 @@
+*{
+   
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    margin: 20px auto;   
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+
+}
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    text-align: start;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center; 
+    align-content: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+   
+    
+}
+.p{
+    color: hsl(303, 10%, 53%) ;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+}
+div{
+    padding: 10px;
+}
+.div{
+  
+    width: 520px;
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-areas:
+    "one one .."
+    "..tree tree";
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.tree{
+    grid-area: tree;
+}
+h5{
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    margin-top: 25px;
+   
+}
+.text{
+    margin-right: 100PX;
+    margin-top: 25px;
+    text-align: initial;
+}
+.star{
+    height: 60px;
+    border-radius: 4px;
+    background-color: hsl(300, 24%, 96%);
+    display: grid;
+    grid-template-columns:120px 250px;
+    margin: 5px auto;
+    
+
+}
+.abo{
+    position: relative;
+    bottom: 8px;
+}
+.container2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.bottom{
+    background-color: hsl(300, 43%, 22%);
+    width: 450px;
+    height: 270px;
+    margin: 5px auto;
+    border-radius: 4px;
+    color: hsl(0, 0%, 100%);
+ }
+.img{
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.ver{
+    color: hsl(333, 80%, 67%);
+    position: relative;
+    left: 35%;
+    bottom: 100px;
+    opacity: 50%;
+}
+.nom{
+    position: relative;
+    left: 35%;
+    bottom: 85px;
+}
+#irenne{
+    position: relative;
+    top: 20px;
+}
+#anne{
+    position: relative;
+    top: 40px;
+}
+h6{
+    margin: 10px auto;
+    text-align: start;
+    font-size: 13px;
+    position: relative;
+    bottom: 70px;
+    opacity: 70%;
+}
+@media (max-width:700px){
+    .div{
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "one " "two" " tree";
+        
+    }
+    .star{
+       width: 370px;
+       height: 70px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+      
+  
+   }
+    h1{
+        width: 370px;
+        text-align: center;
+       
+   }
+    h5{
+        text-align: center;
+        width: 370px;
+      
+   }
+        
+    img.abo{
+        position: relative;
+        top: 30px;
+    }
+    .p{
+       text-align: center;
+        position: relative;
+        left: 20px;
+    }
+    .text{
+        text-align: center;
+    }
+  .body{
+      background-image: url(./images/bg-pattern-bottom-mobile.svg);
+  }
+    
+}
